@@ -1,0 +1,111 @@
+body{
+	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#carouselExampleControls{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	width: 800px;
+	height: 600px;
+	 position: relative;
+        top:50%;
+        left: 16%;  
+}
+
+#logo{
+	width:90%;
+	height:200px;
+   	border-radius: 40px;
+}
+#accordionExample{
+  	justify-content: center;
+  	align-items: center;
+	width: 600px;
+	height: 600px;
+	position: relative;
+        top:50%;
+        left: 5%;  
+	width:90%;
+	height:200px;
+   	border-radius: 40px;
+}
+#formulario{
+	
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #FA0606;
+	width:80%;
+	height:60px;
+	border-radius: 40px;
+	position: relative;
+        top:3%;
+        left: 10%; 
+}
+#form{
+	justify-content: center;
+	width: 600px;
+	height: 600px;
+	 position: relative;
+        top:5%;
+        left: 5%; 
+	width:90%;
+	height:200px;
+   	border-radius: 40px;	
+}
+#tarjeta{
+	text-align: center;
+	position: relative;
+        top:50%;
+        left: 25%;
+}
+#histo{
+	text-align: justify;
+}
+#imga{
+	position: relative;
+        top:50%;
+        left: 40%;
+}
+#list-example{
+	justify-content: center;
+  	align-items: center;
+	width: 600px;
+	height: 600px;
+	position: relative;
+        top:50%;
+        left: 5%;  
+	width:90%;
+	height:200px;
+   	border-radius: 10px;
+}
+#datos{
+	position: relative;
+        top:50%;
+        left: 30%;
+        text-align: justify;
+        width: 400px;
+		height: 400px;
+}
+
+#login{
+	width:400px;
+	height:200px;
+   	border-radius: 40px;
+}
+
+#form_inicio{
+	border: 2px solid #000000;
+	background-color: #9AE2F7;
+	border-radius: 20px;
+}
+
+#inicio{
+	width: 80%;
+	padding: 8px 20px;
+	border: 2px solid #ccc;
+	box-sizing: border-box;
+}

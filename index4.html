@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+	<title>TIENDA VIRTUAL</title>
+  <link rel="icon" type="imge/x-icon" href="https://cdn.icon-icons.com/icons2/701/PNG/512/Marvel_icon-icons.com_61667.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div align="center">
+		<h3>Tienda Virtual</h3>
+	</div>
+
+	<!-----------------------------------BARRA DE NAVEGACIÓN--------------------------->
+	<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">&emsp;&emsp;&emsp;&emsp;&ensp;INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index2.html">PRODUCTOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index3.html">ACERCA DE...</a>
+        </li>
+        <!--BUSQUEDA -->
+        <form class="d-flex" role="search">
+          &emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;
+          <input class="form-control me-6" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+          &emsp;&ensp;&emsp;
+          <li class="nav-item">
+          <a class="nav-link active" href="index4.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<br><br>
+	<!-- INTERFAZ LOGIN -->
+	<div class="container" align="center" id="login">
+	<!-- Pills navs -->
+	<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+	  <li class="nav-item" role="presentation">
+	    <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+	      aria-controls="pills-login" aria-selected="true">Iniciar sesión</a>
+	  </li>
+	  <li class="nav-item" role="presentation">
+	    <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="index5.html" role="tab"
+	      aria-controls="pills-register" aria-selected="false">Registrarse</a>
+	  </li>
+	</ul>
+<!-- Pills navs -->
+
+<!-- Pills content -->
+	<div class="tab-content">
+	  <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+	    
+	    <!-- FORMULARIO DE INICIO DE SESION -->
+	    <form method="post" action="conexion.php" id="form_inicio"> 
+	     
+
+	      <!-- Email input -->
+	      <div class="form-outline mb-4">
+	      	<br>
+	        <label class="form-label" for="loginName">Usuario</label>
+	        <input id="inicio" type="text" id="loginName" class="form-control" name="email" />
+	      </div>
+
+	      <!-- Password input -->
+	      <div class="form-outline mb-4">
+	        <label  class="form-label" for="loginPassword">Password</label>
+	        <input id="inicio" type="password" id="loginPassword" class="form-control" name="contraseña" />
+	      </div>
+
+	      <!-- 2 column grid layout -->
+	      <div class="row mb-4">
+	        
+
+	        <div class="form-outline mb-4" align="center">
+	          <!-- Simple link -->
+	          <a href="#!">Olvidó su contraseña?</a>
+	        </div>
+	      </div>
+
+	      <!-- Submit button -->
+	      <button type="submit" class="btn btn-primary btn-block mb-4">Iniciar sesión</button>
+
+	      <!-- Register buttons -->
+	      <div class="text-center">
+	        <p>No eres miembro? <a href="index5.html">Registrarse</a></p>
+	      </div>
+	    </form>
+	  </div>
+	  
+	</div>
+	<!-- Pills content -->
+</div>
+</body>
+</html>

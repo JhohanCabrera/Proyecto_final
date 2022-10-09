@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+	<title>TIENDA VIRTUAL</title>
+  <link rel="icon" type="imge/x-icon" href="https://cdn.icon-icons.com/icons2/701/PNG/512/Marvel_icon-icons.com_61667.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	 
+<!-------------------------------------- IMAGENES LOGO-------------------------------->
+	<div align="center">
+		<h3>Tienda Virtual</h3>
+	</div>
+
+	<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">&emsp;&emsp;&emsp;&emsp;&ensp;INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index2.html">PRODUCTOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index3.html">ACERCA DE...</a>
+        </li>
+        <!--BUSQUEDA -->
+        <form class="d-flex" role="search">
+          &emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;
+          <input class="form-control me-6" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+          &emsp;&ensp;&emsp;
+          <li class="nav-item">
+          <a class="nav-link" href="index4.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br>
+<div class="container" align="center" id="login">
+	
+	<!-- REGISTRAR USUARIO -->
+	<div class="tab-content">
+	  <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+	    <form method="post" action="conexion2.php" id="form_inicio">
+	     
+	      <!-- Email input -->
+	      <div class="form-outline mb-4">
+	      	<br>
+	        <label class="form-label" for="loginName"><b>Nombre</b></label>
+	        <input id="inicio" type="text" id="loginName" class="form-control" name="nombre" />
+	      </div>
+
+	      <div class="form-outline mb-4">
+	        <label class="form-label" for="loginName"><b>Apellido</b></label>
+	        <input id="inicio" type="text" id="loginName" class="form-control" name="apellido" />
+	      </div>
+
+	      <div class="form-outline mb-4">
+	        <label class="form-label" for="loginName"><b>Correo electronico</b></label>
+	        <input id="inicio" type=email id="loginName" class="form-control" name="email" />
+	      </div>
+
+	      <!-- Password input -->
+	      <div class="form-outline mb-4">
+	        <label class="form-label" for="loginPassword"><b>Contraseña</b></label>
+	        <input id="inicio" type="password" id="loginPassword" class="form-control" name="contraseñar" />
+	      </div>
+
+	      <!-- 2 column grid layout -->
+	      <div class="row mb-4">
+	        <div class="form-outline mb-4">
+	          <!-- Checkbox -->
+	          <div class="form-outline mb-4" align="center">
+	            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+	            <label class="form-check-label" for="loginCheck">Acepto terminos y condiciones </label>
+	          </div>
+	        </div>
+
+	      </div>
+
+	      <!-- Submit button -->
+	      <button type="submit" class="btn btn-primary btn-block mb-4">Registrar Usuario</button>
+
+	      <!-- Register buttons -->
+	      
+	    </form>
+	  </div>
+	  
+	</div>
+
+</body>
+</html>
