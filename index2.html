@@ -1,21 +1,24 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/Style.css">
-	<title>MARVELSTUDIOS</title>
-	<link rel="icon" type="imge/x-icon" href="https://cdn.icon-icons.com/icons2/701/PNG/512/Marvel_icon-icons.com_61667.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/Style.css">
+  <title>TIENDA VIRTUAL</title>
+  <link rel="icon" type="imge/x-icon" href="https://cdn-icons-png.flaticon.com/128/3275/3275391.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <?php
+        include 'estilos.php';
+  ?>
 </head>
 <body>
 	<!-------------------------------------- IMAGENES LOGO-------------------------------->
 	<div align="center">
-		<h3>Tienda Virtual</h3>
-	</div>
+    <img src="img/logo.jpg">
+  </div> <br><br>
     <!-----------------------------------BARRA DE NAVEGACIÓN--------------------------->
     <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
@@ -31,9 +34,7 @@
         <li class="nav-item">
           <a class="nav-link active" href="index2.html">PRODUCTOS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index3.html">ACERCA DE...</a>
-        </li>
+        
         <!--BUSQUEDA -->
         <form class="d-flex" role="search">
           &emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;
@@ -50,14 +51,21 @@
 </nav>
 	<br><br>
 	<!-------------------------------------TARJETAS--------------------------------------------->
-	<div class="row" align="center">
+	<form action="compra.php" method="POST">
+  <div class="row" align="center">
   		<div class="col-sm-3">
     		<div class="card" style="width: 16rem;" >
     			<img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="...">
       				<div class="card-body">
         				<h5 class="card-title"><i>Camiseta Elegante Hombre</i></h5>
                 <label>Precio: 2500</label><br>
-        				<a href="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400" class="btn btn-primary">Comprar</a>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="camiseta"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Azul" >Azul</option>
+                                <option value="Negra" >Negra</option>
+                                <option value="Blanca" >Blanca</option>
+                    </select>
       				</div>
     		</div>
   		</div>
@@ -66,7 +74,14 @@
     			<img src="https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="...">
       				<div class="card-body">
         				<h5 class="card-title"><i>Blusa elegante dama</i></h5>
-        				<a href="https://www.youtube.com/watch?v=Ga17dIokD90" class="btn btn-primary">Ver trailer</a>
+                <label>Precio: 2500</label><br>
+        				<label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="blusa"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Blanca" id="agua">Blanca</option>
+                                <option value="Negra" id="gaseosa">Negra</option>
+                                <option value="Rosada" id="jugo">Rosada</option>
+                    </select>
       				</div>
     		</div>
   		</div>
@@ -75,7 +90,14 @@
     			<img height="40%" src="https://images.pexels.com/photos/4937449/pexels-photo-4937449.jpeg?auto=compress&cs=tinysrgb&w=400" alt="...">
       				<div class="card-body">
         				<h5 class="card-title"><i>Conjunto elegante dama</i></h5>
-        				<a href="https://www.youtube.com/watch?v=6XkN-MFNZpI" class="btn btn-primary">Ver trailer</a>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="conjunto"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Naranja" id="agua">Naranja</option>
+                                <option value="Negro" id="gaseosa">Negro</option>
+                                <option value="Azul" id="jugo">Azul</option>
+                    </select>
       				</div>
     		</div>
   		</div>
@@ -84,7 +106,14 @@
     			<img src="https://images.pexels.com/photos/4380970/pexels-photo-4380970.jpeg?auto=compress&cs=tinysrgb&w=400">
         			<div class="card-body">
         				<h5 class="card-title"><i>Vestido dama</i></h5>
-        				<a href="https://www.youtube.com/watch?v=EVFUfCUZbxk" class="btn btn-primary">Ver trailer</a>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="vestido"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Negro" id="agua">Negro</option>
+                                <option value="Rojo" id="gaseosa">Rojo</option>
+                                <option value="Blanco" id="jugo">Blanco</option>
+                    </select>
       				</div>
     		</div>
   		</div>
@@ -93,7 +122,14 @@
     			<img src="https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=400">
         			<div class="card-body">	
         				<h5 class="card-title"><i>Buso deportivo dama</i></h5>
-        				<a href="https://www.youtube.com/watch?v=BoohRoVA9WQ" class="btn btn-primary">Ver trailer</a>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="buso"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Negro" ">Negro</option>
+                                <option value="Gris" ">Gris</option>
+                                <option value="Blanca" ">Blanca</option>
+                    </select>
       				</div>
     		</div>
   		</div> 
@@ -102,16 +138,30 @@
     			<img src="https://images.pexels.com/photos/1126935/pexels-photo-1126935.jpeg?auto=compress&cs=tinysrgb&w=400">
         			<div class="card-body">	
         				<h5 class="card-title"><i>Blusa floreada dama</i></h5>
-        				<a href="https://www.youtube.com/watch?v=P2TA4kB6EcI" class="btn btn-primary">Ver trailer</a>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="blusa"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Roja" id="agua">Roja</option>
+                                <option value="Rosada" id="gaseosa">Rosada</option>
+                                <option value="Amarilla" id="jugo">Amarilla</option>
+                    </select>
       				</div>
     		</div>
   		</div>
   		<div class="col-sm-3"> <br><br>
-    		<div class="card" style="width: 16rem; height: 17rem;">
+    		<div class="card" style="width: 16rem; height: 20rem;">
     			<img src="https://images.pexels.com/photos/292999/pexels-photo-292999.jpeg?auto=compress&cs=tinysrgb&w=400" alt="...">
       				<div class="card-body">
-        				<h5 class="card-title"><i>Zapatos elegantes hombre</i></h5>
-        				<a href="https://www.youtube.com/watch?v=vJUDu40Z_RY" class="btn btn-primary">Ver trailer</a>
+        				<h5 class="card-title"><i>Zapatos hombre</i></h5>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="zapatos"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Negros" id="agua">Negros</option>
+                                <option value="Cafe" id="gaseosa">Cafe</option>
+                                <option value="Blancos" id="jugo">Blancos</option>
+                    </select>
       				</div>
     		</div>
   		</div>
@@ -120,7 +170,14 @@
     			<img src="https://images.pexels.com/photos/8933266/pexels-photo-8933266.jpeg?auto=compress&cs=tinysrgb&w=400" alt="...">
       				<div class="card-body">
         				<h5 class="card-title"><i>Zapatos dama</i></h5>
-        				<a href="https://www.youtube.com/watch?v=yNXfOOL8824" class="btn btn-primary">Ver trailer</a>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="zapatosdama"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Rosado" id="agua">Rosado</option>
+                                <option value="Rojas" id="gaseosa">Rojas</option>
+                                <option value="Beach" id="jugo">Beach</option>
+                    </select>
       				</div>
     		</div>
   		</div>
@@ -129,7 +186,14 @@
     			<img src="https://images.pexels.com/photos/2060241/pexels-photo-2060241.jpeg?auto=compress&cs=tinysrgb&w=400" alt="...">
       				<div class="card-body">
         				<h5 class="card-title"><i>Abrigo dama</i></h5>
-        				<a href="https://www.youtube.com/watch?v=jmVa1kNDnWA" class="btn btn-primary">Ver trailer</a>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="abrigo"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Blanco con negro" id="agua">Blanco con negro</option>
+                                <option value="Rojo con blanco" id="gaseosa">Rojo con blanco</option>
+                                <option value="Azul con blanco" id="jugo">Azul con blanco</option>
+                    </select>
       				</div>
     		</div>
   		</div>
@@ -138,7 +202,14 @@
     			<img src="https://images.pexels.com/photos/1103828/pexels-photo-1103828.jpeg?auto=compress&cs=tinysrgb&w=400" alt="...">
       				<div class="card-body">
         				<h5 class="card-title"><i>Conjunto deportivo hombre</i></h5>
-        				<a href="https://www.youtube.com/watch?v=MPwsK6CI4dQ" class="btn btn-primary">Ver trailer</a>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="conjuntod"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Azul con negro" id="agua">Azul con negro</option>
+                                <option value="Blanco con rojo" id="gaseosa">Blanco con rojo</option>
+                                <option value="Negro con blanco" id="jugo">Negro con blanco</option>
+                    </select>
       				</div>
     		</div>
   		</div>
@@ -147,7 +218,14 @@
     			<img src="https://images.pexels.com/photos/4937223/pexels-photo-4937223.jpeg?auto=compress&cs=tinysrgb&w=400" alt="...">
       				<div class="card-body">
         				<h5 class="card-title"><i>Conjunto elegante dama</i></h5>
-        				<a href="https://www.youtube.com/watch?v=FmXjNGVpXUc" class="btn btn-primary">Ver trailer</a>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="conjuntoe"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Azul" id="agua">Azul</option>
+                                <option value="Negra" id="gaseosa">Negra</option>
+                                <option value="Gris" id="jugo">Gris</option>
+                    </select>
       				</div>
     		</div>
   		</div>
@@ -156,37 +234,24 @@
     			<img src="https://images.pexels.com/photos/9929712/pexels-photo-9929712.jpeg?auto=compress&cs=tinysrgb&w=400" alt="...">
       				<div class="card-body">
         				<h5 class="card-title"><i>Chaqueta hombre</i></h5>
-        				<a href="https://www.youtube.com/watch?v=qdIuXCfUKM8" class="btn btn-primary">Ver trailer</a>
+        				<label>Precio: 2500</label><br>
+                <label>Elija color</label>
+                    <select class="form-select" aria-label="Default select example" name="chaqueta"> 
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="Blanco con naranja" id="agua">Blanco con naranja</option>
+                                <option value="Blanco con azul" id="gaseosa">Blanco con azul</option>
+                                <option value="Blanco con verde" id="jugo">Blanco con verde</option>
+                    </select>
       				</div>
     		</div>
   		</div>
   		
-  		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div align="center">
+          <br>
+          <input class="btn btn-primary" type="submit" value="Realizar compra">
+          <input class="btn btn-secondary" type="reset" value="Limpiar">
+      </div>
 	</div>
+  </form>
 </body>
 </html>
